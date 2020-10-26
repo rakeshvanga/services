@@ -1,0 +1,25 @@
+{
+	"tasks": [
+		{
+			"label": "local-process-with-kubernetes.service",
+			"type": "local-process-with-kubernetes.service",
+			"service": "bikes",
+			"ports": [
+				3000
+			]
+		},
+		{
+			"label": "dev-spaces: prelaunch",
+			"type": "dev-spaces.prelaunch",
+			"request": "launch",
+			"port": 56869
+		},
+		{
+			"label": "dev-spaces: preattach",
+			"type": "dev-spaces.prelaunch",
+			"request": "attach",
+			"port": 56869,
+			"mainScript": "server.js"
+		}
+	]
+}
